@@ -1,5 +1,12 @@
 body {
+    font-family:'Times New Roman', Times, serif;
     background-color:rgb(156, 248, 209);
+    color:black;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family:"Cambria";
+    text-align:center;
 }
 
 /* Hero section */
@@ -8,6 +15,13 @@ body {
     width:300px;
 }
 
+h1 {
+    font-size:50pt;
+}
+
+header {
+    text-align:center;
+}
 
 /* Bio section */
 
@@ -19,7 +33,6 @@ body {
 #bio h2{
     margin:.5ex;
 }
-
 
 /* Hobbies List */
 #hobbies ul li{
@@ -47,6 +60,18 @@ body {
 
 #gallery figure {
     text-align:center;
+}
+
+/* Literature */
+#lit {
+    border: 2px solid black;
+    margin-bottom:2rem;
+}
+
+#lit div {
+    padding:2rem;
+    max-width: 40rem;
+    margin: 0 auto;
 }
 
 /*Article*/
