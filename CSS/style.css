@@ -1,9 +1,23 @@
 body {
     background-color:rgb(255, 0, 0);
+}
+
+#bio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#bio h2{
+    margin:.5ex;
+}
+
 
     /* Hobbies List*/
     #hobbies ul li{
         color:black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     #hobbies ul li:nth-child(3n-1) {
         color:green;
@@ -15,5 +29,37 @@ body {
     /*Gallery */
     #gallery img {
         max-width:100%;
+    }
+
+    #gallery figure {
+        text-align:center;
+    }
+
+    /*Article*/
+    article p::first-letter {
+        color: rgb(123, 123, 255)
+        background-color: rgb(14, 14, 111);
+        font-family:"Jacquard 24";
+        float:left;
+        border:5px double ;
+        border-radius:10px;
+        padding;.2ex;
+        font-size: 500%;
+        margin-right:.5ex;
+        text-shadow;1px 1px 
+
+    }
+
+    @media screen and (min-width: 60em) {
+
+        figure{
+            display:grid;
+            grid-template-columns: 2fr 1fr;
+    }
+    figcaption {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2em;
     }
 }
