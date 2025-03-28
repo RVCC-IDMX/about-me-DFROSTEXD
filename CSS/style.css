@@ -76,17 +76,32 @@ header {
 
 /*Article*/
 article p::first-letter {
-    color: rgb(123, 123, 255)
+    color: rgb(123, 123, 255);
     background-color: rgb(14, 14, 111);
-    font-family:"Jacquard 24";
+    font-family: "Jacquard", sans-serif;
     float:left;
-    border:5px double ;
+    border:5px double;
     border-radius:10px;
-    padding;.2ex;
+    padding:0.2ex;
     font-size: 500%;
-    margin-right:.5ex;
-    text-shadow;1px 1px 
+    margin-right:.5x;
+    text-shadow:1px 1px 
+}
 
+/*Video*/
+
+#video h2 {
+    text-align:center;
+}
+
+#myVideo {
+    color: rgb(123, 200, 255);
+    background-color: rgb(14, 100, 111);
+    display: flex;
+    margin:auto;
+    border:20px double;
+    border-radius:30px;
+    padding:.25x;
 }
 
 @media screen and (min-width: 60em) {
