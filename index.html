@@ -54,13 +54,16 @@
     <!--Biography section-->
     <section id="bio">
         <h1>BIO</h1>
+        <figure>
+            <img src="img/willatwork.jpeg" class="willwork" style="width: 384px; height: 512px;"/>
+        </figure> 
         <p>
-            My name is William harvey, and welcome to my website!<br>
+            My name is William Harvey, and welcome to my website!<br>
             I am an up and coming web developer, and you are seeing my first ever website. <br>
             Please read all the things I have on this website and feel free to contact me about anything you need at the bottom of the website. <br>
-            You can read about some of my hobbies just below this mac and cheese appreciation post, and just below the hobbies list is the gallery that holds some of the photos that I had taken as well as an image I made that I am very proud of, though it didn't take a lot of work to do it still looks good in my opninion. You will also see my pickleball racket that I used when I first began this sport a little over a year ago, but I got a new one.<br>
-            Lastly is my controller that I use to play game with, while it is an xbox controller, I mainly use it to play games on pc, and I chose the xbox controller because I played xbox for almost all my life playing video games.<br>
-            One of the last things you can see is my blog on how to make a simple animation using css with an example with my logo there as well. I hope you enjoy learning about me and thanks for visiting my website.
+            You can read about some of my hobbies just below this mac and cheese appreciation <br>post, and just below the hobbies list is the gallery that holds some of the photos that I had taken as well <br>as an image I made that I am very proud of, though it didn't take a lot of work to do it still looks good in my opninion. <br>You will also see my pickleball racket that I used when I first began this sport a little over a year ago, but I got a new one.<br>
+            Lastly is my controller that I use to play game with, while it is an xbox controller, <br> I mainly use it to play games on pc, and I chose the xbox controller <br>because I played xbox for almost all my life playing video games.<br>
+            One of the last things you can see is my blog on how to make a simple<br> animation using css with an example with my logo there as well. <br>I hope you enjoy learning about me and thanks for visiting my website.
             
         </p>
         <h2>My favorite food!</h2>
@@ -156,7 +159,7 @@
         <div>
             <p>
                 I wanted to show you guys how to make use of animations in css. It's a very easy process that utilizes keyframes. Keyframes are like checkpoints for an animation that is where an animation will start, let's say for instance that you want to make an animation to have an image move from left to right, you start the keyframe at one area, then make another keyframe with different animation parameters. For example, your original position for an image was on the left side of the website, with the new keyframe that gives it a new position (lets say to the right side) on the screen. When the animation plays, the image will move from the left to the right side in real-time, now there will need to be some other parameters in place, like animation durations, so that the animation doesn't happen instantly, or some other things that you can tweak to make the animation look better. <br>
-                What you're seeing below is an example of an animation that invloves css animation tools. If you want to impliment this into the code, follow these steps. What you need to do is to add in a keyframes into the css section named '@keyframes'. While in that section, you can add whatever kind of animation you want, but for this animation I added some rotation animations. 
+                What you're seeing below is an example of an animation that invloves css animation tools. If you want to impliment this into the code, follow these steps. What you need to do is to add in a keyframes into the css section named '@keyframes'. While in that section, you can add whatever kind of animation you want, but for this animation I added a rotation animation. The first thing to add is a 'from' keyframe, that has the starting position of the animation set to 0 degrees in rotation, it looks like this when typed out <br>(from {<br>transform: rotate(0deg);<br>}). The next key fram we add is similar, but we us 'to' for the next keyframe to signal to the computer that this is what we want the animation to go to, it looks like this (to {transform: rotate(360deg);}). There is your animation. Now we just have to assign it to an element. To assign it, put the css code named 'animation' into the element you want to be animated with the name of the keyframe assigned to the animation you made. For me it was called 'spin', so just put the word spin or whatever else you called it next to the animation element. Next, we put in the specific settings, it looks like this <br>(#lit figure{ <br>text-align: center; <br>animation: spin 2s linear infinite; <br>transform-origin: center; <br>display: block; <br>margin: auto;}).<br> Let's go over the settings. First we put in the duration, which for me was 2 seconds, then we put in linear to keep a contant speed, and finally we have the infinite to keep the logo spinning forever. Now as we can see the logo is going to be spinning infinitley, of course you can do this with any image you want to and more. Now you know how to make an image rotation animation in css. I hope that you can expand upon this and do more than just a rotation animation! Please feel free to contact me about this in case you can't get it to work, I am always able to talk to anyone who needs help with something like this. Enjoy your new animation!
             </p>
         </div>
         <figure>
