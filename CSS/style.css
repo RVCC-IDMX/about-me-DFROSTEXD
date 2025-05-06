@@ -145,6 +145,7 @@ main {
 #lit {
     border: 2px solid black;
     margin-bottom:2rem;
+    align-items: center;
 }
 
 #lit div {
@@ -166,13 +167,23 @@ article p::first-letter {
     font-size: 500%;
     margin-right:.5x;
     text-shadow:1px 1px;
-    animation-name: spin;
-    animation-duration: 4s;
 }
 
 @keyframes spin {
-    from {background-color: red;}
-    to {background-color: blue;}
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+#lit figure{
+    text-align: center;
+    animation: spin 2s linear infinite;
+    transform-origin: center; 
+    display: block;
+    margin: auto;
 }
 
 /*Video*/
