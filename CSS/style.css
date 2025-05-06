@@ -1,10 +1,15 @@
+/* Beginning */
+
 body {
-    padding: 0;
-    margin: 0;
+    border-radius:0px;
+    padding: 50px;
+    margin: 0px;
     font-family:sans-serif;
-    background-color:rgb(124, 124, 124);
-    color:black;
+    background-color:rgb(32, 39, 45);
+    color:black;   
 }
+
+
 
 h1, h2, h3, h4, h5, h6 {
     font-family:sans-serif;
@@ -19,10 +24,24 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
     font-size:50pt;
+    margin: 0px;
 }
 
-header {
+h2 {
+    margin: 0px;
+}
+
+ul {
+    margin: 0px;
+}
+
+header, main, #gallery, #bio, #contact, #blog, #hobbies, #lit, #video, #source{
     text-align:center;
+    background-color:rgb(124, 124, 124);
+}
+
+main {
+    border-radius:30px;
 }
 
 /* Bio section */
@@ -89,6 +108,7 @@ header {
 }
 
 /* Hobbies List */
+
 #hobbies ul li{
     color:black;
     display: flex;
@@ -116,7 +136,12 @@ header {
     text-align:center;
 }
 
+#gallery figcaption {
+    font-family: fantasy;
+}
+
 /* blog */
+
 #lit {
     border: 2px solid black;
     margin-bottom:2rem;
@@ -129,6 +154,7 @@ header {
 }
 
 /*Article*/
+
 article p::first-letter {
     color: rgb(123, 123, 255);
     background-color: rgb(14, 14, 111);
@@ -139,7 +165,14 @@ article p::first-letter {
     padding:0.2ex;
     font-size: 500%;
     margin-right:.5x;
-    text-shadow:1px 1px 
+    text-shadow:1px 1px;
+    animation-name: spin;
+    animation-duration: 4s;
+}
+
+@keyframes spin {
+    from {background-color: red;}
+    to {background-color: blue;}
 }
 
 /*Video*/
