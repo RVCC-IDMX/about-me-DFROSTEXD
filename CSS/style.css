@@ -1,25 +1,30 @@
-/* Beginning */
+/* Main changes */
 
 body {
     border-radius:0px;
-    padding: 50px;
+    padding: 100px;
     margin: 0px;
     font-family:sans-serif;
     background-color:rgb(32, 39, 45);
     color:black;   
 }
 
-
-
 h1, h2, h3, h4, h5, h6 {
     font-family:fantasy;
     text-align:center;
 }
 
+
+
 /* Hero section */
 
 #hero img {
     width:300px;
+}
+
+section img {
+    max-width: 100%;
+    text-align: center;
 }
 
 h1 {
@@ -35,16 +40,32 @@ ul {
     margin: 0px;
 }
 
-header, main, #gallery, #bio, #contact, #blog, #hobbies, #lit, #video, #source{
+header, main, nav, #gallery, #bio, #contact, #blog, #hobbies, #lit, #video, #source{
     text-align:center;
     background-color:rgb(124, 124, 124);
+    display: flex;
+    flex-direction: column;
 }
 
 main {
     border-radius:30px;
 }
 
+
+
 /* Bio section */
+
+#bio img {
+    max-width: 100%;
+    max-height: 100%;
+    align-items: center;
+    color: rgb(4, 0, 0);
+    background-color: rgb(124, 124, 124);
+    border:20px double;
+    border-radius:30px;
+    padding:.25x;
+    text-align:center;
+}
 
 #bio{
     font-family: fantasy;
@@ -56,6 +77,8 @@ main {
     margin:.5ex;
 }
 
+
+
 /* navbar */
 
 .navbar {
@@ -66,6 +89,8 @@ main {
     font-size:1.5rem;
     margin-bottom:1rem;
 }
+
+
 
 /* logo */
 .logo {
@@ -82,6 +107,8 @@ main {
     font-size: 2em;
     margin:.5em 0;
 }
+
+
 
 /* navigation list */
 
@@ -108,6 +135,8 @@ main {
     filter:invert(1);
 }
 
+
+
 /* Hobbies List */
 
 #willwork {
@@ -127,6 +156,8 @@ main {
     color:blue;
 }
 
+
+
 /* Gallery */
 
 #gallery {
@@ -145,6 +176,8 @@ main {
     font-family: fantasy;
 }
 
+
+
 /* blog */
 
 #lit {
@@ -159,6 +192,8 @@ main {
     max-width: 40rem;
     margin: 0 auto;
 }
+
+
 
 /*Article*/
 
@@ -192,10 +227,20 @@ article p::first-letter {
     margin: auto;
 }
 
+
+
 /*Video*/
 
 #video h2 {
     text-align:center;
+    display: flex;
+    flex-direction: column;
+}
+
+#video iframe {
+    max-width: 100%;
+    text-align: center;
+    justify-content: center;
 }
 
 #myVideo {
@@ -206,6 +251,8 @@ article p::first-letter {
     border:20px double;
     border-radius:30px;
     padding:.25x;
+    display: flex;
+    flex-direction: column;
 }
 
 #formElements {
@@ -214,11 +261,16 @@ article p::first-letter {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+
+
+/* Contact information */
+
 #contact {
     padding: 1rem;
-    max-width: 1000px;
+    max-width: 100%;
     margin: 2rem auto;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    align-items: center;
 }
 
 fieldset {
@@ -254,7 +306,18 @@ label {
     }
 
     .logo {
+        display:flex;
         padding-top:0;
+        
+    }
+
+    /*I couldn't figure out how to make the hamburger icon work, I tried */
+
+    .nav__toggle {
+        position: absolute;
+        cursor: pointer;
+        margin: 0rem 1rem;
+        right:0;
     }
 
     .navbar-links {
@@ -274,11 +337,11 @@ label {
     figure{
         display:grid;
         grid-template-columns: 2fr 1fr;
-}
-figcaption {
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2em;
-}
+    }
+    figcaption {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2em;
+    }
 }
